@@ -1,0 +1,16 @@
+balance = 10000
+correct_pin = 1234
+
+pin = int(input("Enter your PIN: "))
+
+if pin == correct_pin:
+    amount = int(input("Enter withdrawal amount: "))
+    
+    if amount <= balance and amount % 100 == 0:
+        balance = balance - amount
+        print("Withdrawal Successful")
+        print("Remaining Balance:", balance)
+    else:
+        print("Invalid amount or Insufficient balance")
+else:
+    print("Incorrect PIN")
