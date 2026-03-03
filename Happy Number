@@ -1,0 +1,15 @@
+num = int(input("Enter number: "))
+
+temp = num
+while temp != 1 and temp != 4:
+    s = 0
+    while temp > 0:
+        digit = temp % 10
+        s += digit * digit
+        temp //= 10
+    temp = s
+
+if temp == 1:
+    print(num, "is a Happy Number")
+else:
+    print(num, "is Not a Happy Number")
