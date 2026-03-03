@@ -1,0 +1,12 @@
+num = int(input("Enter number: "))
+square = num * num
+s = 0
+
+while square > 0:
+    s += square % 10
+    square //= 10
+
+if s == num:
+    print(num, "is a Neon Number")
+else:
+    print(num, "is Not a Neon Number")
