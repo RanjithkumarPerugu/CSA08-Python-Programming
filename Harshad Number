@@ -1,0 +1,12 @@
+num = int(input("Enter number: "))
+temp = num
+s = 0
+
+while temp > 0:
+    s += temp % 10
+    temp //= 10
+
+if num % s == 0:
+    print(num, "is a Harshad Number")
+else:
+    print(num, "is Not a Harshad Number")
